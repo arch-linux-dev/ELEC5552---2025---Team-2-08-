@@ -17,7 +17,7 @@ Bottom layer (ground plane) view showing grounding and power distribution.
 
 3D rendered view of the completed Flight Controller PCB.
 
-# FC
+# ESC
 ## Specifications
 Four-layer 4-in-1 Electronic Speed Controller (ESC) PCB integrating buck-boost and 3.3 V regulation stages, current-sense amplifier, STM32 microcontrollers, gate-driver ICs, and low R<sub>DS(on)</sub> MOSFETs for efficient BLDC motor control. Compatible with 1 S 3.7 V 800 mAh Li-Po battery and AM32 firmware. Designed for compactness, low noise, and safe integration within the quadcopter chassis.
 ## Images
