@@ -1,0 +1,37 @@
+Altium Designer Pick and Place Locations
+C:\Users\Public\Documents\Altium\FC\Project Outputs for FC\Pick Place for FC.csv
+
+========================================================================================================================
+File Design Information:
+
+Date:       03/10/25
+Time:       00:21
+Revision:   0b8638c1bf257977f40c443b0e10f736c74ada11
+Variant:    No variations
+Units used: mm
+
+"Designator","Comment","Layer","Footprint","Center-X(mm)","Center-Y(mm)","Rotation","Description"
+"J1","SM10B-SRSS-TB_LF__SN_","TopLayer","SM10B-SRSS-TB","82.0625","92.5000","270","Connector"
+"C2","0.1uF","TopLayer","CAPC0805(2012)145_M","80.5000","106.0000","90","CAP 100nF 100V ±10% 0805 (2012 Metric) Thickness 1.45mm SMD"
+"C5","0.1uF","TopLayer","CAPC0805(2012)145_M","105.5000","64.0000","90","CAP 100nF 100V ±10% 0805 (2012 Metric) Thickness 1.45mm SMD"
+"C3","0.1uF","TopLayer","CAPC0805(2012)145_M","86.0000","102.5000","270","CAP 100nF 100V ±10% 0805 (2012 Metric) Thickness 1.45mm SMD"
+"C7","10uF","TopLayer","CAPC2013X140X50ML20T25","102.5000","64.0000","90",""
+"R8","1k Ohm","TopLayer","RESC3116X65X40ML10T20","92.4750","71.0000","180",""
+"R7","2k Ohm","TopLayer","RESC3116X65X40ML10T20","92.4750","73.5000","0",""
+"J3","CES-103-01-G-S","TopLayer","CES-103-XX-Y-S","95.0000","60.5000","0","Connector"
+"J5","CES-106-01-T-S","TopLayer","CES-106-XX-Y-S","120.0000","83.2300","90","Connector"
+"ESP32","ESP32-WROOM-32E-N8","TopLayer","ESP32WROOM32EN8","101.7500","99.7800","0","WiFi Modules - 802.11 SMD Module ESP32-WROOM-32E, ESP32-D0WD-V3, 8 MB SPI flash, PCB antenna"
+"U1","TXB0104D","TopLayer","FP-D0014A-IPC_A","91.0000","82.0000","180","IC TRNSLTR BIDIRECTIONAL 14SOIC"
+"SW1","","TopLayer","FP-TL3301AF160QG-MFG","114.0000","72.0000","90","SWITCH TACTILE SPST-NO 0.05A 12V"
+"R6","10k Ohm","TopLayer","FP-AC0603-IPC_A","97.5000","77.5000","90","RES 10kO 5.00% 0.2W 0603"
+"J2","CES-104-02-S-S","TopLayer","CES-104-XX-Y-S","82.0000","79.7300","90","Connector"
+"J4","CES-104-02-S-S","TopLayer","CES-104-XX-Y-S","82.0000","68.3100","90","Connector"
+"R5","2.4k Ohm","TopLayer","RESC1608X55X30ML15T15","105.0000","79.5000","270",""
+"R4","2.4k Ohm","TopLayer","RESC1608X55X30ML15T15","108.5000","79.5000","90",""
+"R3","10k Ohm","TopLayer","FP-AC0603-IPC_A","110.5000","87.6233","270","RES 10kO 5.00% 0.2W 0603"
+"R2","0","TopLayer","FP-AC0603-IPC_A","88.5000","105.5000","90","RES 10kO 5.00% 0.2W 0603"
+"R1","TBD 2.4k Ohm","TopLayer","RESC1608X55X30ML15T15","86.0000","106.2250","90",""
+"JP1","UART","TopLayer","HDR_Male1Å~4_2.54mm","120.0000","105.2300","0","CONN HEADER VERT 4POS 2.54MM"
+"ICM","ICM-42670-P","TopLayer","ICM42670P","106.0000","73.0000","0","Integrated Circuit"
+"C6","2.2uF","TopLayer","FP-CC0603-DA-MFG","109.5000","66.2500","270","CC0603 2.2 uF X5R 10.00% 16 V"
+"C1","22uF","TopLayer","FP-CL10-IPC_B","83.5000","106.0000","270","Cap Ceramic 22uF 6.3V X5R ±20% Pad SMD 0603 +85∞C T/R"
