@@ -25,6 +25,6 @@ Four-layer 4-in-1 Electronic Speed Controller (ESC) PCB integrating buck-boost a
 
 Realistic top and bottom view of the ESC PCB showing component placement and overall layout.
 
-<img width="977" height="513" alt="image" src="https://github.com/user-attachments/assets/0c17ce76-736a-4fa9-a08f-7abcbf10ef4e" />
+<img width="1071" height="1052" alt="image" src="https://github.com/user-attachments/assets/39927c7c-3619-46ff-9020-6a75a05f0218" />
 
-Power and ground plane separation within the ESC PCB stack-up.
+Top, power, ground, and bottom plane views showing component layout and routing.
