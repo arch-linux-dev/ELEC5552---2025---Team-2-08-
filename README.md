@@ -1,5 +1,5 @@
 # ELEC5552 - 2025 - Team-2-08
-Open-source Indoor Surveillance Drone by UWA Team 2-08 for ELEC5552. Includes ESP32 flight-controller firmware, Python ground-station code, and Altium PCB files for custom FC and 4-in-1 ESC using AM32. Designed for safe indoor flight, testing, and future open-source development.
+Open-source Indoor Surveillance Drone by UWA Team 2-08 for ELEC5552. Includes hardware, firmware and software. Designed for safe indoor flight, testing, and future open-source development.
 
 # FC
 ## Specifications
@@ -28,3 +28,45 @@ Realistic top and bottom view of the ESC PCB showing component placement and ove
 <img width="1071" height="1052" alt="image" src="https://github.com/user-attachments/assets/39927c7c-3619-46ff-9020-6a75a05f0218" />
 
 Top, power, ground, and bottom plane views showing component layout and routing.
+
+# Software
+## Flight Controller PCB
+The flight controller PCB, based on an ESP32 microcontroller with an inbuilt IMU and support for an attached time of flight, radar distance and optical flow sensor.
+```
+~/FC PCB - Altium Files/
+```
+The schematic and PCB were designed using Altium, and sent to PCBWay for maunfacturing.
+## Electronic Speed Controller PCB
+The ESC PCB, which is a four-in-one designed to power all motors of the quadcopter and regulate/distribute power to the flight controller and camera modules.
+```
+~/ESC PCB - Altium Files/
+```
+The motor channels are powered by STMicroelectronics MCUs and are intended to run AM32 ESC firmware.
+## Flight Controller Firmware - Custom Version (retired)
+The original flight controller firmware we intended to use, written in ESP-IDF for an ESP32 using FreeRTOS for scheduling.
+```
+~/FC Firmware - Version 1/
+```
+Communication over Wi-Fi using Websockets for data transfer. Complete with a web-based interface for piloting, adjusting PID parameters 'live' without re-writing firmware, and manually overriding setpoints and outputs.
+This version was retired as the performance was not adequate for our liking.
+## Flight Controller Firmware - Crazyflie Version
+A revamped firmware package for our flight controller, this time based on the Crazyflie platform firmware ported to ESP32.
+```
+~/FC Firmware - Version 2/
+```
+This package was selected as it had pre-bundled drivers for our peripherals and a much more advanced arsenal of control loops, predictors and situational awareness handlers. 
+Many functions were modified or replaced with custom versions to support our hardware and use case. Some of the larger changes include:
+* The ESC communication is custom, and was written to translate Crazyflie's motor ratio (a value between 10000 and 60000) into a signal that BLHeli ESCs understand (pulse between 1000ms and 2000ms).
+* The time-of-flight sensor drivers were modified to support the initialisation of a second device and address change of one of the devices so they can operate on the same bus simultaneously. 
+## Ground Station Python Scripts
+These files handle the autonomous navigation step-through, manual control takeover, and video recording via a laptop connected to the drone's Wi-Fi.
+### Flight Planner and Manual Control
+```
+~/Ground Station/planner_interface.py
+```
+This script allows the planning of a flight path via mouse inputs, clicking points on a grid to set the x,y coordinates for the drone. It communicates these sequentially to the drone. There are also buttons to manually pilot the drone, and cut power when required.
+### Video Recording
+```
+~/Ground Station/cam_handler.py
+```
+This script, upon launch, opens a stream from the ESP-CAM over the network and encodes it into a .avi file.
